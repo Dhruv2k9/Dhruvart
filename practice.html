@@ -1,0 +1,41 @@
+<html>
+    <style>
+        #bigcontainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+       .drawingbox{
+           /* display: inline-block; */
+           overflow: hidden;
+           vertical-align: top;
+           height: 200px;
+           /* min-width: 200px;
+           min-height: 200px; */
+           margin:5px;     
+           flex-grow: 1;
+           flex-shrink: 1;
+           align-self: stretch;  
+       }
+       .drawingbox>img{
+           height: 200px;
+                  
+       }  
+       * {
+           background-color: gray;
+       }
+    </style>
+    <BODY>
+        <h1>My Collection</h1>
+        <div id="bigcontainer">
+            <div class="drawingbox"><img src="the_dragon.png"></div>
+            <div  class="drawingbox"><img src="strawberry .jpg"></div>
+            <div class="drawingbox"><img src="lisard.jpg"></div>
+            <div class="drawingbox"><img src="kom.png"></div>
+            <div class="drawingbox"><img src="spidy.png"></div>
+            <div class="drawingbox"><img src="ganesh.png"></div>
+            <div class="drawingbox"><img src="1panelturtlestory.jpg"></div>
+            <div class="drawingbox"></div> 
+        </div>
+        <footer>Thanks for visiting</footer>
+    </BODY>
+</html>
