@@ -26,22 +26,19 @@
   text-align : center;
   font-family : "Times New Roman";
   transition : linear 0.2s;
-  overflow: hidden;
-  flex-grow: 3;
+  width: 300%;
 }
 .welcome>b {
   font-size : 40px
 }
 .sidebarleft>img {
   max-width : 100%;
-  max-height: 100%;
 }
 .sidebarright>img {
   max-width : 100%;
-  max-height: 100%;
   transform: rotate(90deg);
 }
-.drawing_container {
+/* .drawing_container {
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +55,7 @@
 .drawings>img {
   max-width: 100%;
   max-height: 100%;
-}
+} */
 .topbar {
   display: flex;
   justify-content: center;
@@ -79,16 +76,20 @@
   margin-left: 30px;
   margin-right: 30px;
 }
+.biggestcontainer{
+  margin: 150px;
+}
     </style>
     <body>
+      <div class="biggestcontainer">
     <div>
         <h1 class="head">Dhruv's art collection</h1>   
       </div>
         <div class="topbar">
         <div class="links"><a href= "index.html"> HOME</a></div>
-        <div class="links"><a href= "practice.html">practice</a></div>
          <div class="links"><a href= "about.html">ABOUT</a></div>
          <div class="links"><a href= "contact.html"> CONTACT</a></div>
+         <div class="links"><a href= "portfolio.html">MY PORTFOLIO</a></div>
       </div>
       <div class="mid">
           <div class="sidebarleft"><img src="https://static.vecteezy.com/system/resources/previews/001/204/727/non_2x/pencil-png.png"></div>
@@ -97,7 +98,8 @@
           </div>
           <div class="sidebarright"><img src="https://static.vecteezy.com/system/resources/previews/001/204/727/non_2x/pencil-png.png"></div>
       </div>
-      <div class="drawing_container">
+    </div>
+      <!-- <div class="drawing_container">
         <div class = "drawings"><img src="ganesh.png"></div>
         
         <div class = "drawings"><img src="lisard.jpg"></div>
@@ -109,6 +111,6 @@
         <div class = "drawings"></div>
         <div class = "drawings"><img src="knot(drawing).jpeg"></div>    
         <div class = "drawings"></div>
-      </div>
+      </div> -->
      </body>  
-</html>
+</html> 
