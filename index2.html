@@ -12,14 +12,15 @@
       }
       .info {
         display: flex;
-        height: 30%;
-        background-color: rgb(255, 218, 53);
+        height: 40%;
+        flex-direction: row;
+        background-color: rgb(250, 219, 79);
         justify-content: space-evenly;
       }
       .info>div {
         width: 20%;
         box-sizing: border-box;
-        background-color: whitesmoke;
+        background-color: white;
         margin-top: 8px;
         margin-bottom: 8px;
       }
@@ -39,6 +40,18 @@
         justify-content: center;
         align-self: center;
       }
+      hr {
+        width: 25%;
+        border: 3px solid black;
+      }
+      @media (max-width:1021px) {
+        .info {
+          flex-direction: column;
+        }
+      }
+      .img1>img{
+        height: 100%;
+      } 
     </style>
   </head>
   <body>
@@ -49,10 +62,10 @@
           <div class="welcome-txt">WELCOME</div>
           <!--info-->
           <div class="info">
-            <div class="img1"></div>
-            <div class="why?"></div>
-            <div class="about-contact"></div>
-            <div class="art-social"></div>
+            <div class="img1"><img src="pointing-boy.png"></div>
+            <div class="why?">Why?</div>
+            <div class="about-contact">about - contact</div>
+            <div class="art-social">art-social</div>
           </div>
       </div>
   </body>
