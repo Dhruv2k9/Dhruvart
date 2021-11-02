@@ -12,23 +12,15 @@
       }
       .info {
         display: flex;
-        height: 40%;
-        flex-direction: row;
+        flex-direction: column;
         background-color: rgb(250, 219, 79);
-        justify-content: space-evenly;
-      }
-      .info>div {
-        width: 20%;
-        box-sizing: border-box;
-        background-color: white;
-        margin-top: 8px;
-        margin-bottom: 8px;
+        justify-content: space-evenly; 
       }
       .title-name {
         display: flex;
         justify-content: center;
       }
-      .title-name>img {
+      #logo {
         height: 100%;
       }
       .welcome-txt{
@@ -44,28 +36,65 @@
         width: 25%;
         border: 3px solid black;
       }
-      @media (max-width:1021px) {
+      /* @media (max-width:1021px) {
         .info {
           flex-direction: column;
         }
+      } */
+      .info-box {
+        font-size: 40px;
+        font-weight: bold;
+        box-sizing: border-box;
+        background-color: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 10px;
+        text-align: center;
       }
-      .img1>img{
-        height: 100%;
+      .header {
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
       } 
+      #pop-icon {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 30px;
+        left: 900px;
+      }
+      #pop-section {
+        display: none;
+        background-color:whitesmoke;
+        font-size: 40px;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        left: 680px;
+        top: 75px;
+      }
+      #pop-icon:hover + #pop-section{
+        display: block;
+      }
     </style>
   </head>
   <body>
       <div class="content-holder">
         <!--headers-->
-          <div class="title-name"><img src="Dhruvart-Logo.png"></div>
+          <div class="title-name"><img src="Dhruvart-Logo.png" id="logo"><img src="pop-icon.png" id="pop-icon"><div id="pop-section"><a href="index2.html">Home</a><hr><br><a href="about.html">About</a><hr><br><a href="contact.html">Contact</a><hr><br><a href="portfolio.html">My Art</a><hr></div></div>
           <hr>  
           <div class="welcome-txt">WELCOME</div>
           <!--info-->
           <div class="info">
-            <div class="img1"><img src="pointing-boy.png"></div>
-            <div class="why?">Why?</div>
-            <div class="about-contact">about - contact</div>
-            <div class="art-social">art-social</div>
+            <div class="info-box"><div class="header">Why did i create this website?</div>The reason why i created this website was to display my art works to the world.</div>
+            <div class="info-box"><div class="header">About</div>You can know about me by hovering over the 3 dashes and clicking on "About" in the pop up section.</div>
+            <div class="info-box"><div class="header">Contact</div>You can find my contacts by hovering over the 3 dashes and clicking the "Contact" tab.</div>
+            <div class="info-box"><div class="header">Art</div>To see my art works hover over the 3 dashes and click "My Art" in the pop up section</div>
+            <div class="info-box"><div class="header">Socials</div>Click the social icons at the bottom left of the screen to see my social accounts</div>
           </div>
       </div>
   </body>
