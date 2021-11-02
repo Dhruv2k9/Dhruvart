@@ -1,135 +1,123 @@
 <html>
+  <head>
+    <title>Dhruv art</title>
     <style>
-
-.head {
-           text-align: center;
-          font-size : 70px;
-          color: black;
+      .content-holder {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .content-holder>div {
+        margin: 10px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        background-color: lightskyblue;
+        justify-content: space-evenly; 
+      }
+      .title-name {
+        display: flex;
+        justify-content: center;
+      }
+      #logo-name {
+        height: 200%;
+        margin: 10px;
+      }
+      .welcome-txt{
+        display: flex;
+        height: 10%;
+        width: 30%;
+        align-items: center;
+        font-size: 60px;
+        justify-content: center;
+        align-self: center;
+      }
+      hr {
+        width: 25%;
+        border: 3px solid black;
+      }
+      /* @media (max-width:1021px) {
+        .info {
+          flex-direction: column;
         }
-        body {
-            /* background-image :url(background2.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%; */
-            background-color: orange;
-
-
-        }
-.mid {
-  display : flex;
-  height: 200px;
-  justify-content : space-around;
-}
-.welcome {
-  border: 7px solid black;
-  margin-left : 90px;
-  margin-right : 90px;
-  font-size : 50px;
-  text-align : center;
-  font-family : "Times New Roman";
-  transition : linear 0.2s;
-  width: 200%;
-  padding: 10px;
-}
-.sidebarleft>img {
-  max-width : 100%;
-}
-.sidebarright>img {
-  max-width : 100%;
-  transform: rotate(90deg);
-}
-/* .drawing_container {
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin : 10px ;
-  justify-content : space-around; 
-  
-}
-.drawings {
-  border: 0px solid;
-  height: 300px;
-  margin-top: 30px;
-  vertical-align: top;
-}
-.drawings>img {
-  max-width: 100%;
-  max-height: 100%;
-} */
-.topbar {
-  display: flex;
-  justify-content: center;
-  height : 50px;
-  border : 5px solid black;
-  margin : 30px;
-  background-color:lightblack ;
-  align-items : center;
-  position: sticky;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
-}
-.links {
-  text-align : center;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.biggestcontainer{
-  /* padding: 5%; */
-  position: absolute;
-  top: 100px;
-}
-.info {
-  border: 5px solid black;
-  position: relative;
-  top: 600px;
-  height: 300px;
-  width: 50%;
-  margin-right: auto;
-  margin-left: auto;
-}
-.social {
-  height: 30px;
-  border: 2px solid black;
-  position: sticky;
-  top: 900px; 
-}
+      } */
+      .info-box {
+        font-size: 40px;
+        font-weight: bold;
+        box-sizing: border-box;
+        background-color: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 10px;
+        text-align: center;
+      }
+      .header {
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+      } 
+      #pop-icon {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        /* top: 30px;
+        left: 100px; */
+      }
+      #pop-section {
+        display: none;
+        background-color:whitesmoke;
+        font-size: 40px;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        left: -200px;
+      }
+      #pop-container:hover #pop-section{
+        display: block;
+      }
+      .logo {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+      }
+      #facebook {
+        position: sticky;
+        height: 70px;
+        width: 85px;
+        left: 85px;
+        top: -10px;
+      }
+      #pop-container {
+        position: absolute;
+        top: 30px;
+        left: 900px;
+      }
     </style>
-    <body>
-      <div class="biggestcontainer">
-    <div>
-        <h1 class="head">Dhruv's art collection</h1>   
-      </div>
-        <div class="topbar">
-        <div class="links"><a href= "index.html"> HOME</a></div>
-         <div class="links"><a href= "about.html">ABOUT</a></div>
-         <div class="links"><a href= "contact.html"> CONTACT</a></div>
-         <div class="links"><a href= "portfolio.html">MY PORTFOLIO</a></div>
-         <div class="links"><a href= "index2.html">index 2</a></div>
-         
-      </div>
-      <div class="mid">
-          <div class="sidebarleft"><img src="https://static.vecteezy.com/system/resources/previews/001/204/727/non_2x/pencil-png.png"></div>
-        <div id="welcome" class="welcome"><div class="text-adj"><b>WELCOME</b><br><i>To my art collection</div></i>
-            
+  </head>
+  <body>
+      <div class="content-holder">
+        <!--headers-->
+          <div class="title-name"><img src="Dhruvart-logo-blue.png" id="logo-name"><div id="pop-container"><img src="pop-icon.png" id="pop-icon"><div id="pop-section"><a href="index2.html">Home</a><hr><br><a href="about.html">About</a><hr><br><a href="contact.html">Contact</a><hr><br><a href="portfolio.html">My Art</a><hr></div></div></div>
+          <br><br><br><br>
+          <hr>  
+          <div class="welcome-txt">WELCOME</div>
+          <!--info-->
+          <div class="info">
+            <div class="info-box"><div class="header">Why did i create this website?</div>The reason why i created this website was to display my art to the world.</div>
+            <div class="info-box"><div class="header">About</div>You can know about me by hovering over the 3 dashes and clicking on "About" in the pop up section.</div>
+            <div class="info-box"><div class="header">Contact</div>You can find my contacts by hovering over the 3 dashes and clicking the "Contact" tab.</div>
+            <div class="info-box"><div class="header">Art</div>To see my art works, hover over the 3 dashes and click "My Art" in the pop up section</div>
+            <div class="info-box"><div class="header">Socials</div>Click the social icons at the bottom left of the screen to see my social accounts</div>
           </div>
-          <div class="sidebarright"><img src="https://static.vecteezy.com/system/resources/previews/001/204/727/non_2x/pencil-png.png"></div>
+          <div id="socials">
+            <a href="https://www.instagram.com/scr_ibbleart/"><img src="insta-logo.png" id="insta" class="logo"></a>
+            <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo.png" id="facebook" class="logo"></a>
+          </div>
       </div>
-    </div>
-      <!-- <div class="drawing_container">
-        <div class = "drawings"><img src="ganesh.png"></div>
-        
-        <div class = "drawings"><img src="lisard.jpg"></div>
-        <div class = "drawings"><img src="kom.png"></div>
-        <div class = "drawings"><img src="strawberry .jpg"></div>
-        <div class = "drawings"><img src="spidy.png"></div>
-        <div class = "drawings"><img src="the_dragon.png"></div>
-        <div class = "drawings"><img src="1panelturtlestory.jpg"></div>
-        <div class = "drawings"></div>
-        <div class = "drawings"><img src="knot(drawing).jpeg"></div>    
-        <div class = "drawings"></div>
-      </div> -->
-      <div class="info">
-      </div>
-      <footer class="social"></footer>
-     </body>  
-</html> 
+  </body>
+</html>
