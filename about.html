@@ -7,12 +7,11 @@
             width: 45px;
             height: 45px;
             position: relative;
-            left: 900px;
-            top: 20px;
         }
         #profile-box {
             display: flex;
             justify-content: center;
+            margin-right: -70px;
         }
         #profile-img {
             width: 300px;
@@ -22,6 +21,8 @@
         #content-box {
             background-color: lightskyblue;
             padding: 35px;
+            margin-bottom: 35%;
+            width: 100%;
         }
         .header {
             font-size: 50px;
@@ -38,7 +39,7 @@
             padding: 40px;
             margin: 40px;
         }
-        #menu-icon:hover + #pop-section {
+        #pop-box:hover #pop-section {
             display: block;
         }
         #pop-section {
@@ -51,34 +52,97 @@
             padding: 50px;
             width: 160px;
             position: absolute;
-            left: 650px;
-            top: 70px;
+            left: -260px;
+            top: 50px;
         }
         hr {
-        width: 25%;
-        border: 3px solid black;
-      }
-      #pop-box {
-          position: absolute;
-          top: 70px;
-          left: 900px;
-          border: 1px solid black;
-          width: 30px;
-          height: 30px;
-      }
+            width: 25%;
+            border: 3px solid black;
+        }
+        #pop-box {
+            position: absolute;
+            left: 945px;
+            top: 30px;
+            width: 30px;
+            height: 30px;
+        }
+        .logo {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+        }
+        #facebook {
+            position: sticky;
+            height: 70px;
+            width: 85px;
+            left: 85px;
+            top: -10px;
+        }
+        #web-logo {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        #big-container {
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+        }
     </style>
     <body>
-        <img src="pop-icon.png" id="menu-icon"><div id="pop-section">Home</a><hr><br><a href="about.html">About</a><hr><br><a href="contact.html">Contact</a><hr><br><a href="portfolio.html">My Art</a><hr></div>
-        <div id="profile-box"><div id="profile"><img src="profile-icon2.png" id="profile-img"></div></div>
+        <!-- web-logo -->
+        <img src="Dhruvart-logo-blue.png" id="web-logo">
+
+        <!-- pop-menu -->
+
+        <div id="pop-box">
+            <img src="pop-icon.png" id="menu-icon">
+            <div id="pop-section">
+                <a href="index.html">Home</a><hr><br>
+                <a href="about.html">About</a><hr><br>
+                <a href="contact.html">Contact</a><hr><br>
+                <a href="portfolio.html">My Art</a><hr>
+            </div>    
+        </div>
+        </div>
+
+        
+        <div id="big-container">
+
+        <!-- profile -->
+
+        <div id="profile-box">
+            <div id="profile">
+                <img src="profile-icon2.png" id="profile-img">
+            </div>
+        </div>
+
+        <!-- content -->
+
         <div id="content-box">
             <div class="content">
                 <div class="header">About me</div>
-                Hi,I am Dhruv Somani.I am 12yrs old and love to code,draw and play football.I have started drawing from the age of 6 and i love it even more over the year.Having the knowledge of HTML-CSS,I have made this website all by my self.
+                Hi,I am Dhruv Somani.I am 12yrs old and love to code,draw 
+                and play football.I have started drawing from the age of
+                6 and i love it even more over the year.Having the
+                knowledge of HTML-CSS,I have made this website 
+                all by my self.
             </div>
             <div class="content">
                 <div class="header">About this website</div>
-                I have made this website using HTML-CSS languages for displaying my art.
+                I have made this website using HTML-CSS languages
+                 for displaying my art.
             </div>
         </div>
+
+        </div>
+
+        <!-- socials -->
+
+        <div id="socials">
+            <a href="https://www.instagram.com/scr_ibbleart/"><img src="insta-logo.png" id="insta" class="logo"></a>
+            <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo.png" id="facebook" class="logo"></a>
+          </div>
+
     </body>
 </html>
