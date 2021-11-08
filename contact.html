@@ -1,17 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <h1>Contact </h1>
+<html>
+    <head>
+        <title>Dhruvart - Contact</title>
+    </head>
+    <style>
+        #menu-icon {
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+        #pop-box:hover #pop-section {
+            display: block;
+        }
+        #pop-section {
+            display: none;
+            background-color: whitesmoke;
+            font-size: 40px;
+            font-family: monospace;
+            font-weight: bold;
+            text-align: center;
+            padding: 50px;
+            width: 160px;
+            position: absolute;
+            left: -260px;
+            top: 50px;
+        }
+        hr {
+            width: 25%;
+            border: 3px solid black;
+        }
+        #pop-box {
+            position: absolute;
+            left: 890px;
+            top: 25px;
+            width: 30px;
+            height: 30px;
+        }
+        #web-logo {
+            width: 150px;
+            height: 150px;
+            margin-top: -20px;
+        }
+        .title {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .header {
+            font-size: 50px;
+            font-family:sans-serif;
+            font-weight: bold;
+        }
+        .info {
+            background-color: lightskyblue;
+        }
+    </style>
+    <body>
+        <div id="logo-menu">
 
-    <b>Dhruv Somani</b>
-    <br/>
-    Email: <a href="mailto://dhruvsomani2k9@gmail.com">dhruvsomani2k9@gmail.com</a>
+             <!-- logo -->
 
-</body>
+            <img src="Dhruvart-logo-blue.png" id="web-logo">
+
+
+            <!-- pop-menu -->
+
+            <div id="pop-box">
+                <img src="pop-icon.png" id="menu-icon">
+                <div id="pop-section">
+                    <a href="index.html">Home</a><hr><br>
+                    <a href="about.html">About</a><hr><br>
+                    <a href="contact.html">Contact</a><hr><br>
+                    <a href="portfolio.html">My Art</a><hr>
+                </div>    
+            </div>
+            </div>
+
+
+        </div>
+
+        <div id="content-box">
+            <!-- title -->
+            <div class="title"><u>My Contact</u></div>
+
+            <!-- content -->
+
+            <div class="content">
+                <div class="info">
+                    <div class="header">Email :</div>
+                </div>
+            </div>
+
+        </div>
+    </body>
 </html>
