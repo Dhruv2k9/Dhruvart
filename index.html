@@ -10,75 +10,56 @@
       .content-holder>div {
         margin: 10px;
       }
-      .info {
-        display: flex;
-        flex-direction: column;
-        background-color: lightskyblue;
-        justify-content: space-evenly; 
-        border-radius: 40px;
-        padding: 30px;
-      }
       .title-name {
         display: flex;
         justify-content: center;
       }
       #logo-name {
-        height: 200%;
-        margin: 10px;
+        height: 18rem;
       }
-      .welcome-txt{
-        display: flex;
-        height: 10%;
-        width: 30%;
-        align-items: center;
-        font-size: 60px;
-        justify-content: center;
-        align-self: center;
-      }
-      hr {
-        width: 25%;
-        border: 3px solid black;
-      }
-      /* @media (max-width:1021px) {
-        .info {
-          flex-direction: column;
-        }
-      } */
       .info-box {
         font-size: 40px;
-        font-weight: bold;
+        font-weight: 700;
+        font-family: sans-serif;
         box-sizing: border-box;
-        background-color: white;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        margin-left: 25px;
-        margin-right: 25px;
-        padding: 10px;
+        background-color:rgb(200, 220, 255);
+        margin-top: 60px;
+        margin-bottom: 40px;
+        margin-left: 45px;
+        margin-right: 45px;
+        padding: 70px 50px;
         text-align: center;
         border-radius: 40px;
+        transition: linear 0.1s;
+      }
+      .info-box:hover {
+        background-color: rgb(212, 235, 255);
       }
       .header {
         font-weight: bold;
         font-size: 60px;
         text-align: center;
+        margin-bottom: 40px;
       } 
       #pop-icon {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         position: relative;
-        /* top: 30px;
-        left: 100px; */
+        transition: linear 0.2s;
+      }
+      #pop-icon:hover {
+        transform: rotate(-180deg);
       }
       #pop-section {
         display: none;
-        background-color:whitesmoke;
+        background-color:rgb(235, 235, 235);
         font-size: 40px;
         font-family: monospace;
         font-weight: bold;
         text-align: center;
-        padding: 20px;
+        padding: 40px;
         position: absolute;
-        left: -200px;
+        left: -250px;
         border-radius: 30px;
       }
       #pop-container:hover #pop-section{
@@ -87,29 +68,50 @@
       .logo {
         width: 75px;
         height: 75px;
-        position: absolute;
+      }
+      #socials {
+        display: flex;
+        justify-content: center;
       }
       #facebook {
-        position: sticky;
-        height: 70px;
-        width: 85px;
-        left: 85px;
-        top: -10px;
+        position: relative;
+        top: 10px;
+        height: 120px;
+        width: 120px;
       }
       #pop-container {
         position: absolute;
         top: 30px;
         left: 900px;
       }
+      #no-pop-hr {
+        border: 3px solid black;
+        margin-bottom: 40px;
+      }
+      hr{
+        border: 2px solid black;   
+        width: 25%;
+      }
+      body {
+        background-color: whitesmoke;
+      }
+      footer {
+        color: rgb(88, 87, 87);
+        font-size: 40px;
+        text-align: center;
+        margin: 20px;
+      }
+      #insta {
+        position: relative;
+        width: 150px;
+        height: 150px;
+      }
     </style>
   </head>
   <body>
       <div class="content-holder">
         <!--headers-->
-          <div class="title-name"><img src="Dhruvart-logo-blue.png" id="logo-name"><div id="pop-container"><img src="pop-icon.png" id="pop-icon"><div id="pop-section"><a href="index.html">Home</a><hr><br><a href="about.html">About</a><hr><br><a href="contact.html">Contact</a><hr><br><a href="portfolio.html">My Art</a><hr></div></div></div>
-          <br><br><br><br>
-          <hr>  
-          <div class="welcome-txt">WELCOME</div>
+          <div class="title-name"><img src="dhruvart-d-blue-logo.png" id="logo-name"><div id="pop-container"><img src="pop-icon.png" id="pop-icon"><div id="pop-section"><a href="index.html">Home</a><hr><br><a href="about.html">About</a><hr><br><a href="contact.html">Contact</a><hr><br><a href="portfolio.html">My Art</a><hr></div></div></div>
           <!--info-->
           <div class="info">
             <div class="info-box"><div class="header">Why did i create this website?</div>The reason why i created this website was to display my art to the world.</div>
@@ -119,9 +121,10 @@
             <div class="info-box"><div class="header">Socials</div>Click the social icons at the bottom left of the screen to see my social accounts</div>
           </div>
           <div id="socials">
-            <a href="https://www.instagram.com/scr_ibbleart/"><img src="insta-logo.png" id="insta" class="logo"></a>
-            <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo.png" id="facebook" class="logo"></a>
+            <a href="https://www.instagram.com/scr_ibbleart/"><img src="insta-logo2.png" id="insta" class="logo"></a>
+            <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo-black.png" id="facebook" class="logo"></a>
           </div>
+          <footer>2021 by Dhruv somani.<br>Home page</footer>
       </div>
   </body>
 </html>
