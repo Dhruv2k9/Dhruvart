@@ -1,0 +1,228 @@
+.content-holder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-holder>div {
+    margin: 10px;
+  }
+  .title-name {
+    display: flex;
+    justify-content: center;
+  }
+  #logo-name {
+    height: 18rem;
+  }
+  .info-box {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Play";
+    box-sizing: border-box;
+    background-color:rgb(200, 220, 255);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 70px 50px;
+    text-align: center;
+    border-radius: 40px;
+    transition: linear 0.1s;
+    box-shadow: 10px 10px 10px  rgb(107, 167, 235);
+  }
+  .info-box:hover {
+    background-color: rgb(212, 235, 255);
+  } 
+  #pop-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: linear 0.2s;
+  }
+  #pop-icon:hover {
+    transform: rotate(-180deg);
+  }
+  #pop-section {
+    display: none;
+    background-color:rgb(235, 235, 235);
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    position: absolute;
+    left: -250px;
+    border-radius: 30px;
+  }
+  #pop-container:hover #pop-section{
+    display: block;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+  #pop-container {
+    position: absolute;
+    top: 30px;
+    left: 900px;
+  }
+  body {
+    background-color: whitesmoke;
+  }
+  footer {
+    color: rgb(88, 87, 87);
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+  }
+hr {
+    width: 25%;
+    border: 3px solid black;
+}
+#pop-box {
+    position: absolute;
+    left: 890px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+}
+.title {
+    font-size: 130px;
+    font-family: "Bebas Neue";
+    text-align: center;
+}
+.inputs {
+    border-radius : 10px;
+    width: 490px;
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding: 40px;
+    transition: 0.1s;
+    background-color: rgb(247, 243, 243);
+}
+.inputs:focus {
+    background-color: white;
+}
+#form-box {
+    box-shadow: 10px 10px 10px rgb(107, 167, 235);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius : 40px;
+    background-color: rgb(200, 220, 255);
+    margin: 100px;
+}
+.form-headers {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Play";
+    margin-bottom: 20px;
+}
+#message {
+    height: 300px;
+}
+#button {
+    border-radius : 20px;
+    width: 150px;
+    height: 50px;
+    background-color: oldlace;
+    font-size: 30px;
+}
+#insta {
+position: relative;
+width: 150px;
+height: 150px;
+}
+#note {
+  font-size: 50px;
+  font-family: "Play";
+  font-weight: 200;
+  margin-top: 25px;
+}
+#menu-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    transition: linear 0.2s;
+}
+#menu-icon:hover {
+    transform: rotate(-180deg);
+}
+#profile-box {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+#profile-img {
+    width: 300px;
+    height: 300px;
+}
+.header {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Mochiy Pop P One";
+}
+.content {
+    font-size: 25px;
+    font-family: "Play";
+    text-align: center;
+    background-color: rgb(200, 220, 255);
+    border-radius: 40px;
+    transition: linear 0.1s;
+    box-shadow: 10px 10px 10px  rgb(107, 167, 235);
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 90px 70px;
+}
+.content:hover {
+background-color: rgb(212, 235, 255);
+}
+#pop-box:hover #pop-section {
+    display: block;
+}
+#pop-section {
+    display: none;
+    background-color: rgb(235, 235, 235);
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+    width: 160px;
+    position: absolute;
+    left: -305px;
+    top: 50px;
+    border-radius: 40px;
+}
+#pop-box {
+    position: absolute;
+    left: 945px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+}
+#web-logo {
+    width: 150px;
+    height: 150px;
+}
+#socials {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+}
+#facebook {
+position: relative;
+top: 10px;
+height: 120px;
+width: 120px;
+}
+#About-footer {
+    color: rgb(88, 87, 87);
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;   
+}
