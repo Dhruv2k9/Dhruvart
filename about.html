@@ -1,52 +1,60 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play|Anton|Bebas Neue|Mochiy Pop P One">
         <title>Dhruv art - About</title>
     </head>
     <style>
+        body {
+            background-color: whitesmoke;
+        }
         #menu-icon {
             width: 50px;
             height: 50px;
-            position: relative;
+            position: absolute;
+            left: -50px;
+            transition: linear 0.2s;
+        }
+        #menu-icon:hover {
+            transform: rotate(-180deg);
         }
         #profile-box {
             display: flex;
             justify-content: center;
-            margin-right: -70px;
-            margin-bottom: 100px;
+            margin: 100px 100px;
         }
         #profile-img {
             width: 300px;
             height: 300px;
-            margin: 90px;
-        }
-        #content-box {
-            background-color: lightskyblue;
-            padding: 35px;
-            width: 100%;
-            border-radius: 40px;
         }
         .header {
             font-size: 50px;
-            font-weight: bold;
-            font-family: sans-serif;
             text-align: center;
-            margin: 20px;
+            margin-bottom: 40px;
+            font-family: "Mochiy Pop P One";
         }
         .content {
+            font-size: 25px;
+            font-family: "Play";
             text-align: center;
-            font-weight: bold;
-            font-size: 15px;
-            background-color: white;
-            padding: 40px;
-            margin: 40px;
+            background-color: rgb(200, 220, 255);
             border-radius: 40px;
+            transition: linear 0.1s;
+            box-shadow: 10px 10px 10px  rgb(107, 167, 235);
+            margin-top: 60px;
+            margin-bottom: 40px;
+            margin-left: 45px;
+            margin-right: 45px;
+            padding: 70px 50px;
         }
+        .content:hover {
+        background-color: rgb(212, 235, 255);
+      }
         #pop-box:hover #pop-section {
             display: block;
         }
         #pop-section {
             display: none;
-            background-color: whitesmoke;
+            background-color: rgb(235, 235, 235);
             font-size: 40px;
             font-family: monospace;
             font-weight: bold;
@@ -54,7 +62,7 @@
             padding: 50px;
             width: 160px;
             position: absolute;
-            left: -260px;
+            left: -305px;
             top: 50px;
             border-radius: 40px;
         }
@@ -81,15 +89,34 @@
             width: 150px;
             height: 150px;
             position: absolute;
+            top: 0px;
         }
         #socials {
             display: flex;
             margin-top: 24%;
+            justify-content: center;
         }
+        footer {
+        color: rgb(88, 87, 87);
+        font-size: 15px;
+        text-align: center;
+        margin: 20px;
+      }
+      #insta {
+        position: relative;
+        width: 150px;
+        height: 150px;
+      }
+      #facebook {
+        position: relative;
+        top: 10px;
+        height: 120px;
+        width: 120px;
+      }
     </style>
     <body>
         <!-- web-logo -->
-        <img src="Dhruvart-logo-blue.png" id="web-logo">
+        <img src="dhruvart-d-blue-logo.png" id="web-logo">
 
         <!-- pop-menu -->
 
@@ -135,9 +162,9 @@
         <!-- socials -->
 
         <div id="socials">
-            <a href="https://www.instagram.com/scr_ibbleart/"><img src="insta-logo.png" id="insta" class="logo"></a>
-            <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo.png" id="facebook" class="logo"></a>
+            <a href="https://www.instagram.com/scr_ibbleart/"></a><img src="insta-logo2.png" id="insta" class="logo"></a>
+            <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo-black.png" id="facebook" class="logo"></a>
           </div>
-
+          <footer>2021 by Dhruv somani.<br>Home page</footer>
     </body>
 </html>
