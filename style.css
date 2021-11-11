@@ -9,11 +9,15 @@
   .title-name {
     display: flex;
     justify-content: center;
+    background-color:rgb(255 78 78);
+    /* bg-colors: */
+    /* gainsboro */
+    /* rgb(200, 220, 255) */
   }
   #logo-name {
-    height: 18rem;
+    height: 15em;
   }
-  .info-box {
+  /* .info-box {
     font-size: 50px;
     font-weight: 500;
     font-family: "Play";
@@ -31,27 +35,14 @@
   }
   .info-box:hover {
     background-color: rgb(212, 235, 255);
-  } 
+  }  */
   #pop-icon {
     width: 50px;
     height: 50px;
-    position: relative;
     transition: linear 0.2s;
   }
   #pop-icon:hover {
     transform: rotate(-180deg);
-  }
-  #pop-section {
-    display: none;
-    background-color:rgb(235, 235, 235);
-    font-size: 40px;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    padding: 40px;
-    position: absolute;
-    left: -250px;
-    border-radius: 30px;
   }
   #pop-container:hover #pop-section{
     display: block;
@@ -194,7 +185,7 @@ background-color: rgb(212, 235, 255);
     padding: 50px;
     width: 160px;
     position: absolute;
-    left: -305px;
+    left: -260px;
     top: 50px;
     border-radius: 40px;
 }
@@ -225,4 +216,38 @@ width: 120px;
     font-size: 15px;
     text-align: center;
     margin: 20px;   
+}
+.art-box:hover {
+  margin: 30px;
+}
+#illustration {
+  background-image: url("strawberrydrawing-transparent.png");
+}
+#charater-sketch {
+  background-image: url("inkrabbit-trans.png");
+  background-position: 50%;
+} 
+#faces {
+  background-image: url("face-trans.png");
+  background-position: 50%;
+}
+#life-drawing {
+  background-image: url("realhorse-trans.png");
+  background-position: 10% 10%;
+}
+.art-box {
+  margin: 90px;
+  font-size: 130px;
+  font-family:"Bebas Neue";
+  text-align: center;
+  padding-top:200px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: linear 0.3s;
+  background-size: cover;  
+  border-radius: 30px;
+  color: whitesmoke;      
+  text-shadow: 10px 10px 10px black;   
+  box-shadow: 10px 10px 10px grey;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
 }
