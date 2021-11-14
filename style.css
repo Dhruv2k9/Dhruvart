@@ -11,6 +11,7 @@
     font-family: "Mochiy Pop P One";
     padding: 20px;
     color: black;
+    border: 2px solid black;
   }
   #logo-name {
     height: 15em;
@@ -56,6 +57,12 @@
   }
   body {
     background-color: whitesmoke;
+  }
+  #about-footer {
+    color: rgb(88, 87, 87);
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
   }
   footer {
     color: rgb(88, 87, 87);
@@ -149,27 +156,6 @@ height: 150px;
     width: 300px;
     height: 300px;
 }
-.header {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: "Mochiy Pop P One";
-}
-.content {
-    font-size: 25px;
-    font-family: "Play";
-    text-align: center;
-    background-color: rgb(200, 220, 255);
-    border-radius: 40px;
-    transition: linear 0.1s;
-    box-shadow: 10px 10px 10px  rgb(107, 167, 235);
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 90px 70px;
-}
-.content:hover {
-background-color: rgb(212, 235, 255);
-}
 #pop-box:hover #pop-section {
     display: block;
 }
@@ -183,7 +169,7 @@ background-color: rgb(212, 235, 255);
     padding: 50px;
     position: absolute;
     left: -260px;
-    top: 50px;
+    top:  34px;
     border-radius: 40px;
 }
 #pop-box {
@@ -207,15 +193,6 @@ position: relative;
 top: 10px;
 height: 120px;
 width: 120px;
-}
-#About-footer {
-    color: rgb(88, 87, 87);
-    font-size: 15px;
-    text-align: center;
-    margin: 20px;   
-}
-.art-box:hover {
-  
 }
 #illustration {
   background-image: url("strawberrydrawing-transparent.png");
@@ -263,4 +240,37 @@ width: 120px;
   justify-content: center;
   align-items: center;
   font-family: "Mochiy Pop P One";
+}
+#content-box {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Anton";
+  align-self: center;
+  color: rgb(17, 17, 17);
+}
+#info {
+  font-size: 50px;
+  text-align: center;
+  font-family: "bebas neue";
+  color: rgb(53, 52, 52);
+}
+#head {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
+#style-h1 {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Shadows Into Light";
+  font-weight: 600;
+}
+#style-p {
+  font-size: 50px;
+  text-align: center;
+  font-family: "play";
+  font-weight: 100;
+  font-style: italic;
+  width: 700px;
+  margin: auto;
 }
