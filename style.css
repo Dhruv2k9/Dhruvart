@@ -211,7 +211,7 @@ width: 120px;
 }
 .art-box {
   margin: 90px;
-  font-size: 130px;
+  font-size: 5em;
   font-family:"Bebas Neue";
   text-align: center;
   transition: linear 0.1s;
@@ -222,6 +222,15 @@ width: 120px;
   box-sizing: border-box;
   height:450px;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+}
+#art-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:640px) {
+  #art-container {
+    flex-direction: column;
+  }
 }
 .no-deco-links {
   text-decoration: none;

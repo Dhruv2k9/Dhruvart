@@ -1,0 +1,139 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play|Anton|Bebas Neue|Mochiy Pop P One|Dongle">
+    <style>
+        .tab-bar {
+            background-color: rgb(255, 87, 87);
+            margin: -10px;
+            display: flex;
+            align-items: center ;
+            justify-content: end;
+            padding: 8px;
+            height: 40px;
+        }
+        .menu-box {
+            display: none;
+            width : 35px;
+            height: 35px;
+            position: absolute;
+        }
+        .tab-opions-full {
+            display: none;
+            text-align: center;
+            margin: 40px;
+            word-spacing: 3em;
+            text-decoration: none;
+            
+        }  
+        .title-box {
+            width:99%;
+            text-align: center;
+            font-family: "Mochiy Pop P One";
+            font-size: 1.5em;
+            text-shadow: 2px 2px 2px white;
+        }
+        .menu-img {
+            width: 100%;
+        }
+        .tab-links {
+            text-decoration: none;
+            transition: linear .1s;
+            color: rgb(70, 69, 69);
+            font-family: "dongle";
+            font-size: 30px;
+        }
+        .tab-links > u {
+            border-color: rgb(70, 69, 69);
+        }
+        .tab-links:hover {
+            font-size: 35px;
+            color: black;
+        }
+        .art-box {
+            background-size: cover;  
+            border-radius: 30px;   
+            height: 50vh;
+            width: 80vw;
+            margin: auto;
+            margin-top: 50px;
+            background-image: url("strawberrydrawing-transparent.png");
+            text-align: center;
+            color: white;
+            font-family:"Bebas Neue";
+            text-shadow: 10px 10px 10px black;   
+            box-shadow: 15px 15px 15px lightgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+        }
+        @media (max-width:500px) {
+            .menu-box {
+                display: block;
+            }
+            .art-box {
+                height: 33vh;
+
+            }
+        }
+        @media (min-width : 500px) {
+            .tab-opions-full {
+                display: block;
+            }
+            .art-box {
+                height: 40vh;
+                width: 70vw;
+            }
+        }
+        .pop-menu {
+            background-color: white;
+            width: 200px;
+            position: absolute;
+            top:-10px;
+            right: -10px;
+            height: 100vh;
+            text-align: center;
+            display: block;
+            padding-top: 300%;
+            letter-spacing: 4px;
+
+        }
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+    <body>
+        <div class="tab-bar">
+
+            <div class="menu-box">
+                <img src="menu-icon-trans.png" class="menu-img">
+                <div class="pop-menu">
+                    <a href="index-2.0.html" class="tab-links"><u>HOME</u> </a><br>
+                    <a href="about.html" class="tab-links"><u>ABOUT</u></a><br>
+                    <a href="contact.html" class="tab-links"><u>CONTACT</u></a><br> 
+                    <a href="portfolio.html" class="tab-links"><u>ART</u> </a><br>
+                </div>
+            </div>
+
+
+            <div class="title-box">
+                <div class="tab-title">- DHRUV ART -</div>
+            </div>
+        </div>
+        <div class="tab-opions-full">
+            <a href="index-2.0.html" class="tab-links"><u>HOME</u> </a>
+            <a href="about.html" class="tab-links"><u>ABOUT</u></a>
+            <a href="contact.html" class="tab-links"><u>CONTACT</u></a> 
+            <a href="portfolio.html" class="tab-links"><u>ART</u> </a>
+         </div>
+
+         <div class="art-container">
+             <div class="art-box" id="ilustration">ILLUSTRATIONS</div>
+             <div class="art-box" id="faces">FACES</div>
+             <div class="art-box" id="charater-drawing">CHARACTER DRAWING</div>
+             <div class="art-box" id="mini-superheroes">MINI SUPERHEROES</div>
+         </div>
+
+
+    </body>
+</html>
