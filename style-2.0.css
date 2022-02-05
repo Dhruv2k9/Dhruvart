@@ -1,0 +1,144 @@
+html,body{
+    margin:0px;
+    padding:0px;
+}
+.tab-bar {
+    background-color: rgb(255, 87, 87);
+    display: flex;
+    align-items: center ;
+    justify-content: end;
+    height: 40px;
+}
+.menu-box {
+    display: none;
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    transition: linear .1s;
+    margin-right: 10px;
+}
+.tab-opions-full {
+    display: none;
+    text-align: center;
+    margin: 40px;
+    word-spacing: 3em;
+    text-decoration: none;
+    
+}  
+.title-box {
+    width:99%;
+    text-align: center;
+    font-family: "Mochiy Pop P One";
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px white;
+}
+.tab-title > a {
+    text-decoration: none;
+    color: black;
+}
+.menu-img {
+    width: 100%;
+}
+.tab-links {
+    text-decoration: none;
+    transition: linear .1s;
+    color: rgb(70, 69, 69);
+    font-family: "dongle";
+    font-size: 30px;
+}
+.tab-links > u {
+    border-color: rgb(70, 69, 69);
+}
+.tab-links:hover {
+    font-size: 35px;
+    color: black;
+}
+.art-box {
+    background-size: cover;  
+    border-radius: 30px;   
+    height: 50vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url("strawberrydrawing-transparent.png");
+    text-align: center;
+    color: white;
+    font-family:"Bebas Neue";
+    text-shadow: 10px 10px 10px black;   
+    box-shadow: 15px 15px 15px lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+@media (max-width:510px) {
+    .menu-box {
+        display: block;
+    }
+    .art-box {
+        height: 33vh;
+
+    }
+}
+@media (min-width : 510px) {
+    .tab-opions-full {
+        display: block;
+    }
+    .art-box {
+        height: 40vh;
+        width: 70vw;
+        font-size: 80px;
+    }
+}
+.pop-menu {
+    background-color: white;
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 30px;
+    visibility: hidden;
+    transition: linear .1s;
+    margin: -10px;
+
+}
+.menu-box:hover .pop-menu {
+    visibility: visible;
+    width: 45vw;
+}
+body {
+    background-color: whitesmoke;
+}
+#illustrations {
+    background-image: url("strawberrydrawing-transparent.png");
+}
+#faces {
+    background-image: url("face-trans.png");
+}
+#mini-superheroes {
+    background-image: url("spiderman-new.png");
+}
+#charater-drawing {
+    background-image: url("inkrabbit-trans.png");
+}
+#socials {
+    text-align: center;
+    margin-top: 40px;
+}
+#insta {
+    width: 80px;
+}
+#facebook {
+    margin-bottom: 20px;
+    width: 43px;
+}
+.footer {
+    text-align: center;
+    color: rgb(43, 42, 42);
+    font-family: "bebas neue";
+    font-size: 20px;
+}
