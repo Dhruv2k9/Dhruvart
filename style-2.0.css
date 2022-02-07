@@ -79,6 +79,12 @@ html,body{
         height: 33vh;
 
     }
+    .s-info-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 @media (min-width : 510px) {
     .tab-opions-full {
@@ -141,4 +147,67 @@ body {
     color: rgb(43, 42, 42);
     font-family: "bebas neue";
     font-size: 20px;
+}
+.s-info-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#my-name-info {
+    font-family: "anton";
+    font-size: 40px;
+    color: rgb(26, 25, 25);
+}
+#s-info {
+    font-size: 20px;
+    color: rgb(39, 38, 38);
+}
+.my-picture {
+    margin: 20px;
+}
+.more-info {
+    font-size: 20px;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+} 
+.more-info > div {
+    font-weight: bold;
+    margin: 20px;
+    color: rgb(46, 46, 46);
+} 
+.abt-drawing-title {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    color: rgb(4, 4, 4);
+
+}
+.art-holder{
+    border: 0px solid black;
+    max-width: 100%;
+    display: flex;
+}
+.recent-drawings {
+    display: flex;
+}
+@media (max-width: 800px) {
+    .recent-drawings {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+@media (min-width : 800px) {
+    .recent-drawings{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .art-holder {
+        max-width: 80%;
+        height: 100vh ;
+        margin: auto;
+        margin-top: 40px;
+    }
 }
