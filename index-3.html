@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play|Anton|Bebas Neue|Mochiy Pop P One|Dongle">
+</head>
+<style>
+    body {
+        background-image: url("dotted-bg.jpg");
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-box {
+        text-align: right;
+        width: 25px;
+    }
+
+    .pop-menu {
+        visibility: hidden;
+        background-color: white;
+        padding: 20px;
+        height: 100vh;
+        width: 0px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        text-align: center;
+        transition: linear .1s;
+        margin-right: -5px;
+    }
+
+    .menu-box:hover .pop-menu {
+        visibility: visible;
+        width: 120px;
+    }
+
+    .full-menu {
+        text-align: center;
+        word-spacing: 50px;
+        margin: 30px;
+    }
+
+    .box {
+        background-color: rgb(255, 69, 69);
+        height: 300px;
+    }
+
+    .box-img>img {
+        width: 10em;
+        position: absolute;
+        height: 20em;
+    }
+
+    .box {
+        height: 380px;
+        border-radius: 10px;
+    }
+
+    .s-info {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .text {
+        font-family: "dongle";
+        font-size: 1.5em;
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    .tab-link {
+        font-family: "dongle";
+        font-size: 25px;
+        text-decoration: none;
+        color: rgb(82, 82, 82);
+        transition: linear .1s;
+    }
+
+    .tab-link:hover {
+        color: black;
+        font-size: 30px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo-link>img {
+        width: 200px;
+    }
+
+    .sub-title {
+        font-weight: 100;
+        font-size: 30px;
+        margin-top: -10px;
+        font-family: "dongle";
+    }
+
+    .art-title {
+        text-align: center;
+        margin: 40px;
+        font-size: 40px;
+        font-family: "bebas Neue";
+        color: rgb(28, 27, 27);
+    }
+
+    .art-box {
+        text-align: center;
+    }
+
+    #socials {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #insta {
+        width: 80px;
+    }
+
+    #facebook {
+        margin-bottom: 20px;
+        width: 43px;
+    }
+
+    .footer {
+        text-align: center;
+        color: rgb(43, 42, 42);
+        font-family: "bebas neue";
+        font-size: 20px;
+    }
+
+    @media (max-width:580px) {
+        .menu-box {
+            display: block;
+        }
+
+        .full-menu {
+            display: none;
+        }
+
+        .box-img {
+            margin-left: 10%;
+            width: 10em;
+
+        }
+
+        .box-img>img {
+            width: 11em;
+
+        }
+
+        .s-info {
+            margin-right: 0px;
+            font-size: 1.2em;
+        }
+
+        .art>img {
+            width: 100vw;
+        }
+    }
+
+    @media (min-width : 580px) {
+        .full-menu {
+            display: block;
+        }
+
+        .menu-box {
+            display: none;
+        }
+
+        .box-img {
+            margin-left: 35%;
+        }
+
+        .box-img>img {
+            margin-top: -20px;
+            width: 220px;
+            height: 380px;
+        }
+
+        .s-info {
+            margin-right: 15%;
+            font-size: 20px;
+        }
+
+        .art>img {
+            height: 90vh;
+        }
+    }
+</style>
+
+<body>
+    <!-- TAB START -->
+    <div class="tab">
+        <div class="menu-box">
+            <img src="menu-icon-trans.png">
+            <div class="pop-menu">
+                <a href="index-3.html" class="tab-link">HOME</a><br><br>
+                <a href="about-2.0.html" class="tab-link">ABOUT</a><br><br>
+                <a href="contact.html" class="tab-link"> CONTACT</a><br><br>
+                <a href="portfolio.html" class="tab-link">MY ART</a><br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="full-menu">
+        <a href="index-3.html" class="tab-link">HOME</a>
+        <a href="about-2.0.html" class="tab-link">ABOUT</a>
+        <a href="contact.html" class="tab-link"> CONTACT</a>
+        <a href="portfolio.html" class="tab-link">ART</a>
+    </div>
+    <!-- TAB END -->
+
+
+    <!-- logo-start -->
+
+    <div class="logo">
+        <a href="index-3.html" class="logo-link"><img src="DHRUVART-logo(600px).png"></a>
+        <h4 class="sub-title">-MY UTOPIA ON PAPER-</h4>
+    </div>
+
+    <!-- logo end -->
+
+
+    <div class="box">
+        <div class="box-img"><img src="ganesh-trans.png"></div>
+        <div class="s-info">
+            <div class="text">SEE MY ART</div><br>
+            <div class="text">GET INSPIRATION</div><br>
+            <div class="text">ASK DOUBTS</div><br>
+            <div class="text">BECOME DA VINCI</div>
+        </div>
+    </div>
+
+    <div class="art-title">LATEST ART</div>
+
+    <div class="art-box">
+        <div class="art"><img src="monster.jpeg"></div>
+        <div class="art"><img src="cart-drawing.jpeg"></div>
+    </div>
+
+
+    <div id="socials">
+        <a href="https://www.instagram.com/scr_ibbleart/"><img src="insta-logo2.png" id="insta" class="logo"></a>
+        <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="facebook-logo-black2.png" id="facebook"
+                class="logo"></a>
+    </div>
+
+    <div class="footer">2021-2022 by Dhruv Somani<br>Home page </div>
+</body>
+
+</html>
