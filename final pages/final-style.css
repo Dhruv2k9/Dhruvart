@@ -10,14 +10,13 @@ html, body {
 }
 .nav-container {
     padding-left: 50px;
-    width: 100%;
-    height: 160px;
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
 }
 .logo {
-    width:160px;
+    max-width: 10vw;
+    display: flex;
+    align-items: center;
 }
 .logo-img{
     width: 100%;
@@ -25,84 +24,82 @@ html, body {
 .links {
     text-decoration: none;
     color: var(--grey);
-    font-size: 1.3em;
+    font-size: 1.6vw;
     transition: linear .1s ;
 }
 .links:hover {
-    font-size: 1.4em
+    font-size: 1.8vw
 }
 .nav-links{
-    padding: 75px;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 300px;
+    align-items: center;
+    width: 25vw;
+    margin:0px;
 }
 .circle {
-    width:860px;
-    height: 890px;
+    width:50vw;
+    height: 50vw;
     background-color:var(--yellow);
     border-radius: 100%;
     position: absolute;
-    top: -240px;
-    left: 980px;
+    top: -17vw;
+    right: -12vw;
 }
 .title {
-    font-size: 70px;
+    font-size: 6vw;
     width: 7em;
     font-family: Secular One;
-    line-height: 60px;
+    line-height: 5vw;
 }
 .headings {
     width: min-content;
     border: 0px solid black;
-    margin-left:290px;
-    margin-top: 100px;
+    margin-left: 15vw;
+    margin-top: 10vw;
 }
 .s-info {
-    margin-top: 30px;
-    line-height: 25px;
-    color: 5f5e5e;
-    font-size: 1em;
+    color: #5f5e5e;
+    font-size: 1.9vw;
+    line-height: 2.6vw;
+    margin: 4vw 0vw;
 }
 .button {
-    width: 90px;
-    height: 45px;
+    width: 8vw;
+    height: 4vw;
     border: 0px;
     background-color:var(--yellow);
-    padding: 10px;
-    font-size: .8em;
+    font-size: 1.3vw;
     color: var(--grey);
     font-family: inter;
-    margin-top: 20px;
+    padding: 0px;
     transition: linear .1s;
 }
 .card-container {
-    margin-top: 190px;
+    margin-top: 10vw;
     background-color: var(--yellow);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 80px;
+    flex-wrap: wrap;
+    padding: 5vw;
 }
 .card {
-    width: 100%;
-    margin: 20px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 0px;
 }
 .icon {
-    width: 150px;
-    height: 150px;
+    min-width: 12vw;
+    min-height: 12vw;
     border-radius: 100%;
     background-color: aliceblue;
 }
 .card-h1 {
     font-family: Secular One;
-    font-weight:700 ;
+    font-size: 2.8vw;
 }
 .white-button {
     background-color:#ffff;
@@ -123,8 +120,7 @@ html, body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 990px;
-    margin: auto;
+    margin: 10vw;
     overflow: hidden;
 
 }
@@ -153,4 +149,47 @@ footer {
     color: var(--grey);
     font-size: 1em;
     margin-bottom: 30px;
+}
+.menu-box {
+    display: none;
+    text-align:end;
+    z-index: 100;
+}
+@media (max-width: 640px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-box {
+        display: block;
+    }
+    .button {
+        width: 56px;
+        height: 25px;
+        font-size: 8px;
+    }
+}
+@media (max-width: 440px) {
+    .headings {
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 28vw;
+        text-align: center;
+    }
+    .title {
+        font-size: 8vw;
+        line-height: 7vw;
+    }
+}
+@media (max-width : 400px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .icon {
+        width: 30vw;
+        height: 30vw;
+    }
+    .card-h1 {
+        font-size: 7vw;
+        font-weight: 600;
+    }
 }
