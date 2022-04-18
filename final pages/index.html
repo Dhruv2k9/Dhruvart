@@ -1,22 +1,36 @@
 <html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Secular One">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="main.css">
-
 <head>
     <title>DHRUVART - Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Secular One">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="nav-container">
-        <img src="icons/web-title.png" alt="DHRUVART" class="logo">
-        <div class="menu-box">
+        <a href="index.html"><img src="icons/web-title.png" alt="DHRUVART" class="logo"></a>
+
+        <!-- <div class="menu-box">
             <img src="icons/menu-icon-trans.png" alt="menu-icon">
+        </div> -->
+
+        <div class="nav-icons">
+            <a href="index.html">
+                <img src="icons/house-chimney-solid.svg" alt="home icon" class="icon">
+            </a>
+            <a href="contact.html">
+                <img src="icons/phone-solid.svg" alt="Contact icon" class="icon">
+            </a>
+            <a href="about.html">
+                <img src="icons/user-solid.svg" alt="About icon" class="icon">
+            </a>
         </div>
+
         <ul class="nav-links">
-            <li class="link">Home</li>
-            <li class="link">Contact</li>
-            <li class="link">About</li>
+            <li class="link"><a href="index.html" class="link-a">Home</a></li>
+            <li class="link"><a href="about.html" class="link-a">Contact</a></li>
+            <li class="link"><a href="contact.html" class="link-a">About</a></li>
         </ul>
     </div>
     </div>
@@ -27,12 +41,49 @@
         <div class="title">A WINDOW TO <br>MY CREATIONS</div>
 
         <div class="s-info">
-            Dhruvart is my utopia which is filled with
+            Dhruvart is my utopia filled with
             wonders and creative juices. Get inspiration, ask doubts and unleash
             your inner Da Vinci.
         </div>
 
         <button class="button">DISCOVER</button>
     </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-icon"></div>
+            <div class="card-h">ILLUSTRATIONS</div>
+            <button class="button white-button">DISCOVER</button>
+        </div>
+        <div class="card">
+            <div class="card-icon"></div>
+            <div class="card-h">CHARACTERS</div>
+            <button class="button white-button">DISCOVER</button>
+        </div>
+        <div class="card">
+            <div class="card-icon"></div>
+            <div class="card-h">FACES</div>
+            <button class="button white-button">DISCOVER</button>
+        </div>
+    </div>
+
+    <div class="insta-container">
+        <h1 class="insta-h1">MY INSTAGRAM</h1>
+        <div class="insta-box">
+            <div class="insta-art"><img src="drawings/bear-drawing.jpeg"></div>
+            <div class="insta-art"><img src="drawings/cart-drawing.jpeg"></div>
+            <div class="insta-art"><img src="drawings/deadpool.jpeg"></div>
+            <div class="insta-art"><img src="drawings/knot.jpeg"></div>
+            <div class="insta-art"><img src="drawings/kom.jpeg"></div>
+            <div class="insta-art"><img src="drawings/monster.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="socials">
+        <a href="https://www.facebook.com/dhruv.somani.5201/"><img src="icons/facebook-square-brands.svg" alt="facebook"></a>
+        <a href="https://www.instagram.com/scr_ibbleart/"><img src="icons/instagram-square-brands.svg" alt="instagram"></a>
+    </div>
+    <div class="footer">2022 by Dhruv Somani<br>HOME PAGE</div>
 </body>
+
 </html>
