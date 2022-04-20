@@ -38,6 +38,10 @@ body ,html{
 }
 .icon {
     width: 4vw;
+    transition: ease-out .1s;
+}
+.icon:hover {
+    transform: scale(120%);
 }
 .logo {
     max-width: 25vw;
@@ -178,9 +182,6 @@ body ,html{
 .button:hover {
     cursor: pointer;
 }
-.icon:hover {
-    transform: scale(120%);
-}
 .bg-container {
     width: 80vw;
     display: flex;
@@ -224,6 +225,46 @@ body ,html{
     opacity: 0%;
     font-weight:100 ;
     animation: appear 1000ms ease-in-out 800ms forwards ;
+}
+.form{
+    margin: auto;
+    width: min-content;
+}
+.header {
+    text-align: center;
+    font-size: 10vw;
+    font-family: secular one;
+    margin: 2vw;
+    color: #202020;
+    animation: scale 800ms forwards;
+    transform: scale(0%);
+}
+.inputs {
+    width: 80vw;
+    padding: 4vw;
+    background-color: #F5F4F4;
+    margin: 5vw;
+    border: 0px;
+    color: var(--grey);
+    border-radius: 6px;
+    transform: scaleX(0%);
+    animation: scale-x 800ms 500ms forwards; 
+    font-family: inter;
+}
+.inputs:focus {
+    background-color: #fff;
+    color: black;
+}
+.mge-box {
+    height: 25vw;
+}
+.submit-btn {
+    background-color: var(--yellow);
+}
+.submit-btn:hover {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
 }
 @media (min-width : 700px){
     .heading-box {
@@ -316,6 +357,33 @@ body ,html{
     .content-section {
         text-align: start;
     }
+    .header {
+        text-align: center;
+        font-size: 6vw;
+        font-family: secular one;
+        margin: 2vw;
+    }
+    .inputs {
+        width: 50vw;
+        padding: 1vw;
+        background-color: #F5F4F4;
+        margin: 2vw;
+        border: 0px;
+        border-radius: 6px;
+        transform: scaleX(0%);
+        animation: scale-x 800ms 400ms forwards; 
+        font-family: inter;
+    }
+    .inputs:focus {
+        background-color: #fff;
+    }
+    .mge-box {
+        height: 8vw;
+    }
+    .submit-btn {
+        background-color: var(--yellow);
+        transition: linear .1s;
+    }
 }
 @media (max-width : 470px) {
     .card-container {
@@ -334,5 +402,15 @@ body ,html{
     0% {
         opacity: 0%;
         transform: translateX(-100%);
+    }
+}
+@keyframes scale {
+    100% {
+        transform: scale(100%);
+    }
+}
+@keyframes scale-x {
+    100% {
+        transform: scaleX(100%);
     }
 }
