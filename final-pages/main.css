@@ -266,6 +266,17 @@ body ,html{
     color: #fff;
     cursor: pointer;
 }
+.art-title {
+    font-size: 8vw;
+}   
+.latest-art {
+    font-size: 8vw;    
+}
+.art>img {
+    height: 100%;
+    box-sizing: border-box;
+    border: 10px solid var(--yellow);
+}
 @media (min-width : 700px){
     .heading-box {
         text-align: start;
@@ -383,6 +394,39 @@ body ,html{
     .submit-btn {
         background-color: var(--yellow);
         transition: linear .1s;
+    }
+    .latest-art-h {
+        margin-left: 5vw;
+        font-size: 3vw;
+        animation: scale 800ms forwards;
+        transform: scale(0%);
+    }
+    .art-title {
+        text-align: center;
+        font-size: 4vw;
+        font-family: secular one;
+        animation: scale 800ms 500ms forwards;
+        transform: scale(0%);
+    }
+    .latest-drawings-box {
+        display: flex;
+        margin: 1vw;
+        height: 20vw;
+        align-items: center;
+        overflow: scroll;
+    }
+    .latest-drawings-box::-webkit-scrollbar{
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .latest-drawings-box::-webkit-scrollbar-thumb {
+        border-radius: 80px;
+        background-color: var(--grey);
+    }
+    .art>img {
+        height: 100%;
+        box-sizing: border-box;
+        border: 10px solid var(--yellow);
     }
 }
 @media (max-width : 470px) {
