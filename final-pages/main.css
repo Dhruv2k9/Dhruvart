@@ -267,15 +267,32 @@ body ,html{
     cursor: pointer;
 }
 .art-title {
-    font-size: 8vw;
-}   
-.latest-art {
-    font-size: 8vw;    
+    text-align: center;
+    font-size: 4vw;
+    font-family: secular one;
+    animation: scale 800ms 100ms forwards;
+    transform: scale(0%);
+}
+.drawings-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    opacity: 0%;
+    animation: appear 1000ms 900ms forwards;
+    margin-bottom: 2vw;
+}
+.art {
+    min-height: 25vw;
 }
 .art>img {
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border: 10px solid var(--yellow);
+    object-fit: cover;
+    box-shadow:2px 2px #202020;
+    /* border: 2px solid #202020; */
 }
 @media (min-width : 700px){
     .heading-box {
@@ -395,38 +412,32 @@ body ,html{
         background-color: var(--yellow);
         transition: linear .1s;
     }
-    .latest-art-h {
-        margin-left: 5vw;
-        font-size: 3vw;
-        animation: scale 800ms forwards;
-        transform: scale(0%);
-    }
     .art-title {
         text-align: center;
         font-size: 4vw;
         font-family: secular one;
-        animation: scale 800ms 500ms forwards;
+        animation: scale 800ms 100ms forwards;
         transform: scale(0%);
     }
-    .latest-drawings-box {
+    .drawings-box {
         display: flex;
-        margin: 1vw;
-        height: 20vw;
+        flex-wrap: wrap;
         align-items: center;
-        overflow: scroll;
+        justify-content: center;
+        gap: 2vw;
+        opacity: 0%;
+        animation: appear 1000ms 900ms forwards;
     }
-    .latest-drawings-box::-webkit-scrollbar{
-        border-radius: 10px;
-        background-color: #fff;
-    }
-    .latest-drawings-box::-webkit-scrollbar-thumb {
-        border-radius: 80px;
-        background-color: var(--grey);
+    .art {
+        height: 25vw;
     }
     .art>img {
+        width: 100%;
         height: 100%;
         box-sizing: border-box;
-        border: 10px solid var(--yellow);
+        object-fit: cover;
+        box-shadow:2px 2px #202020;
+        /* border: 2px solid #202020; */
     }
 }
 @media (max-width : 470px) {
