@@ -268,7 +268,7 @@ body ,html{
 }
 .art-title {
     text-align: center;
-    font-size: 4vw;
+    font-size: 9vw;
     font-family: secular one;
     animation: scale 800ms 100ms forwards;
     transform: scale(0%);
