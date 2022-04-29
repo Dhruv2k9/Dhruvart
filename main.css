@@ -124,7 +124,12 @@ body ,html{
     border-radius: 100%;
     width: 20vw;
     height: 20vw;
+    display: flex;
     background-color: #fff;
+}
+.card-icon>img {
+    max-width: 100%;
+    border-radius: 100%;
 }
 .card-h {
     font-size: 1.4em;
