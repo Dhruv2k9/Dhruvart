@@ -16,6 +16,63 @@ body ,html{
     justify-content: space-between;
 
 }
+.container{
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+.cards {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF06A;
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    width: 200px;
+    box-shadow: 0 0 15px 0 #FFF06A;
+
+}
+.card-header {
+    height: 120px;
+    width: 120px;
+    border-radius: 30%;
+    overflow: hidden;
+    background-size:cover;    
+    background-position: center ;
+}
+.card-title {
+    color: black;
+    /* font-family: Arial, Helvetica, sans-serif;    */
+    font-weight: 700;
+}
+.card-btn { 
+    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    transition: .3s;
+}
+.cards button {
+    height: 40px;
+    /* font-size: .9em; */
+}
+.card-header.illustration {
+    background-image: url("drawings/harry\ Potter_1.jpg");
+}
+.card-header.character {
+    background-image: url("drawings/vexx\ type\ doodle_1.jpg");
+}
+.card-header.semi-realistic {
+    background-image: url("drawings/realhorse.jpeg");
+    background-position: top;
+}
+.card-btn:hover {
+    background-color: black;
+    color: white;
+}
 /* .menu-box {
     width: 7vw;
     height: 7vw;

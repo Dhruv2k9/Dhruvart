@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            gap: 50px;
+            padding: 15px;
+            margin: 0;  
+            background-color: black;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* justify-content: center; */
+        }
+        .cards {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF06A;
+            padding: 15px;
+            border-radius: 15px;
+            width: 130px;
+            box-shadow: 0 0 15px 0 #FFF06A;
+        }
+        .header {
+            height: 100px;
+            background-color: rgb(169, 175, 255);
+            border-radius: 30%;
+            overflow: hidden;
+            background-size:cover;    
+            background-position: center ;
+        }
+        .card-title {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        /* .card-btn { 
+            padding: 8px;
+            background-color: white;
+            border: 1px solid black;
+            margin-inline: 15%;
+            .cards button {
+                height: 20px;
+            }
+            transition: .3s;
+        } */
+        .header.illustration {
+            background-image: url("drawings/harry\ Potter_1.jpg");
+        }
+        .header.character {
+            background-image: url("drawings/vexx\ type\ doodle_1.jpg");
+        }
+        .header.semi-realistic {
+            background-image: url("drawings/realhorse.jpeg");
+            background-position: top;
+        }
+        .card-btn:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="header illustration"></div>
+            <div class="card-title">ILLUSTRATIONS</div>
+            <button class="card-btn">DISCOVER</button>
+        </div>
+        <div class="cards">
+            <div class="header character"></div>
+            <div class="card-title">CHARACTERS</div>
+            <button class="card-btn">DISCOVER</button>
+        </div>
+        <div class="cards">
+            <div class="header semi-realistic"></div>
+            <div class="card-title">SEMI-REALISTIC</div>
+            <button class="card-btn">DISCOVER</button>
+        </div>
+    </div>
+</body>
+</html>
