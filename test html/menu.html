@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-container {
+            width: 30px;
+            height: 30px;
+            background-image: url('/icons/menu-icon-trans.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin: 10px;
+        }
+
+        .menu-slide.open {
+            transform: translateX(0%);
+        }
+
+        .menu-slide {
+            transition: 200ms ease-in-out;
+            background-color: #333;
+            width: 30%;
+            height: 100vh;
+            transform: translateX(-100%);
+        }
+
+        .slide-items {
+            list-style: none;
+            padding: 10px 30px;
+            height: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .slide-items>li {
+            margin: 40px 0px;
+            color: rgb(199, 199, 199);
+            font-family: sans-serif;
+            transition: 100ms linear;
+        }
+        .slide-items>li:hover {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+        .X-mark {
+            margin: 10px;
+            width: 50px;
+            height:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container" data-menu></div>
+    <div class="menu-slide" data-slide> 
+        <img src="/icons/x-menu.png" class="X-mark" data-cross>
+        <ul class="slide-items">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>My Art</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let menu = document.querySelector('[data-menu]')
+    let slide = document.querySelector('[data-slide]')
+    let cross = document.querySelector('[data-cross]')
+
+    menu.addEventListener('click' , e=> {
+        slide.classList.add('open')
+    })
+    cross.addEventListener('click', e=> {
+        slide.classList.remove('open')
+    })
+</script>
+
+</html>

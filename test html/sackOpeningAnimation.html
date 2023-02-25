@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        #sack-container {
+            width: 40vw;
+            height: 50vh;
+            background-image: url("/Dhruvart/index assets/closed sac_1.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+        .cards {
+            height: 60px;
+            width: 950px;
+            background-color: black;
+            margin: 10px;
+            transform: translateY(100%);
+            transition: linear 900ms; 
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="sack-container">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+    </div>
+
+    <script>
+        let sack = document.getElementById("sack-container")
+        let cards = document.getElementsByClassName('cards')
+        console.log(cards)
+        sack.addEventListener('click', e => {
+            sack.style.backgroundImage = "url('/Dhruvart/index assets/open sac_1.png')";
+            flyCards();
+        });
+
+        function flyCards(){
+           for(i=0; i< cards.length; i++){
+            cards[i].style.transform = 'translateY(-100px)'
+            cards[i].style.opacity = '100%'
+           } 
+        }
+    </script>
+</body>
+</html>

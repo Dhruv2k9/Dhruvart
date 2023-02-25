@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #sack {
+            width: 150px;
+            z-index: 2;
+            height: 200px;
+        }
+
+        #sack>* {
+            height: 100%;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        #card-container {
+            color: white;
+            transition: linear .1s;
+            margin-left: 50px;
+
+        }
+
+        .outsack {
+            opacity: 0%;
+            animation: moveUp 2s forwards;
+            display: flex;
+            position: absolute;
+            gap: 10px;
+        }
+
+        .insack {
+            opacity: 0%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            padding: 5px;
+            position: absolute;
+        }
+
+        .cards {
+            background-color: black;
+            padding: 2em;
+        }
+
+        @keyframes moveUp {
+            20% {
+                transform: translateY(30%);
+            }
+            30% {
+                transform: translateY(50%);
+                opacity: 0%;
+            }
+            
+            90% {
+                opacity: 80%;
+                width: 50px;
+                height: 100px;
+                overflow: hidden;
+
+            }
+            100% {
+                opacity: 90%;
+                transform: translateY(-140%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="card-container" class="insack">
+            <div class="cards"><a href = illustrations.html>ILLUSTRATIONS</a></div>
+            <div class="cards">CHARACTERS</div>
+            <div class="cards">SEMI REALISITC</div>
+        </div>
+
+        <div id="sack" onclick="openSack()">
+            <img src="/Dhruvart/index assets/closed sac_1.png" id="closed-sack">
+            <img src="/Dhruvart/index assets/open sac_1.png" id="opened-sack" class="hide">
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+        let sackContainer = document.getElementById("sack")
+        let openedSack = document.getElementById("opened-sack")
+        let closedSack = document.getElementById("closed-sack")
+
+
+        let cardContainer = document.getElementById("card-container")
+        function openSack() {
+            closedSack.classList.add("hide")
+            openedSack.classList.remove("hide")
+            cardContainer.classList.remove("insack")
+            cardContainer.classList.add("outsack")
+        }
+
+    </script>
+</body>
+
+</html>
