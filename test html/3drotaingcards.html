@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .slider-container {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            perspective: 1500px;
+            overflow: hidden;
+        }
+        .slider {
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transition: 500ms linear;
+        }
+        .slider-items {
+            overflow: hidden;
+            border-radius: 30px;
+            color: white;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            border: 5px solid #000000;
+            transform-style: preserve-3d;
+            position: absolute;
+            transform:rotateY(calc(var(--rotate)*60deg)) translateZ(250px);
+        }
+        .slider-items>img {
+            width: 100%;
+        }
+        .btn {
+            background-color: rgb(255, 255, 255);
+            opacity: 50%;
+            border: 0px;
+            position: absolute;
+            left: 0;
+            height: 200px;
+            width: 40px;
+            border-radius: 30px 0px 0px 30px;
+            background-image: url('/icons/caret-right-solid.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
+            padding: 15px;
+            box-sizing: border-box;
+            z-index: 1;
+            transition: 200ms linear;
+        }
+        .btn:hover {
+            opacity: 100%;
+        }
+        .prev {
+            left: 100%;
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <button class="btn" data-prev></button>
+        <div class="slider" data-slider>
+            <div class="slider-items slider-item-1" style="--rotate:1"><img src="/drawings/PXL_20230318_184035748.MP_2.jpg"></div>
+            <div class="slider-items slider-item-2" style="--rotate:2"><img src="/drawings/PXL_20230318_184035748.MP_2.jpg"></div>
+            <div class="slider-items slider-item-3" style="--rotate:3"><img src="/drawings/PXL_20230318_184035748.MP_2.jpg"></div>
+            <div class="slider-items slider-item-4" style="--rotate:4"><img src="/drawings/PXL_20230318_184035748.MP_2.jpg"></div>
+            <div class="slider-items slider-item-5" style="--rotate:5"><img src="/drawings/PXL_20230318_184035748.MP_2.jpg"></div>
+            <div class="slider-items slider-item-6" style="--rotate:6"><img src="/drawings/PXL_20230318_184035748.MP_2.jpg"></div>
+        </div>
+        <button class="btn prev" data-next></button>
+    </div>
+</body>
+<script>
+    let slider = document.querySelector('[data-slider]')
+    let nextbtn = document.querySelector('[data-next]')
+    let prevbtn = document.querySelector('[data-prev]')
+
+    nextbtn.addEventListener('click', e=> {
+        slider.style.transform += "rotateY(-60deg)"
+    })
+    prevbtn.addEventListener('click', e=> {
+        slider.style.transform += "rotateY(60deg)"
+    })
+</script>
+</html>
