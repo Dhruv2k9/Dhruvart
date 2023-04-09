@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Secular One|Neucha|Londrina Solid|Inter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>DHRUVART | Art Page</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        :root {
+            --primary-black: #1E1E1E;
+            --secondary-black: #000000;
+            --light-grey: #a7a6a6;
+            --primary-white: #FFFFFF;
+            --normal-text: "Inter";
+            --heading: "Londrina Solid";
+        }
+
+        .wrapper {
+            padding-top: 8vw;
+            /* background-color: #262F58; */
+        }
+
+        .header {
+            font-family: londrina solid;
+            color: var(--secondary);
+            text-align: center;
+            font-size: 5vw;
+        }
+
+        .list {
+            list-style: none;
+            gap: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .selections {
+            background-color: transparent;
+            padding: 10px;
+            border: 0px solid transparent;
+            transition: linear 150ms;
+            font-family: inter;
+            font-size: 1.2vw;
+        }
+
+        .selections.selected {
+            border-radius: 20vh;
+            color: white;
+            padding: 10px;
+            border: 0px solid transparent;
+            background-color: var(--primary-black);
+        }
+
+        .drawing_container {
+            margin: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .drawing_container>img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            user-select: none;
+            box-shadow: 2px 2px 22px -4px #262F58;
+        }
+
+        .list-text {
+            text-decoration: none;
+            color: black;
+        }
+
+        .selections.selected>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .art-subtitle {
+            text-align: center;
+            font-size: 4vw;
+            color: var(--primary-black);
+            margin-top: 3vw;
+        }
+
+        @media (max-width:650px) {
+            .header {
+                font-size: 10vw;
+                margin-top: 8vw;
+            }
+
+            .art-subtitle {
+                text-align: center;
+                font-size: 8vw;
+                margin-top: 3vw;
+            }
+
+            .list {
+                gap: 3vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-slide hidden-nav">
+            <dl class="menu-list">
+                <dt><a href="/Dhruvart pages/index.html" class="list-items" >Home</a></dt>
+                <dt><a href="/Dhruvart pages/index.html#About" class="list-items">About</a></dt>
+                <dt><a href="/Dhruvart pages/index.html#Contact" class="list-items">Contact</a></dt>
+                <dt class="myArtText">
+                    My Art
+                    <svg xmlns="http://www.w3.org/2000/svg" class='arrow' viewBox="0 0 256 512">
+                        <path
+                            d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+                    </svg>
+                </dt>
+                <dd><a href='' class="myArtD hide">Illustration</a></dd>
+                <dd><a href='' class="myArtD hide">Character</a></dd>
+                <dd><a href='' class="myArtD hide">Semi-realistic</a></dd>
+                <dd><a href='/Dhruvart pages/art-page.html' class="myArtD hide">All</a></dd>
+                </ul>
+        </div>
+        <div class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </div>
+        <div class="nav-logo">
+            <a href='#'>
+                <img src="/index assets/Dhruvart-logo.png">
+            </a>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="wrapper">
+        <h1 class="title header">My Art</h1>
+        <ul class="list">
+            <li>
+                <a href='#' class="list-text selections selected">All</a>
+            </li>
+            <li>
+                <a href='#' class="list-text selections">Coloured</a>
+            </li>
+            <li>
+                <a href='#' class="list-text selections">Paintings</a>
+            </li>
+            <li>
+                <a href='#' class="list-text selections">Illustration</a>
+            </li>
+            <li>
+                <a href='#' class="list-text selections">Character</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="gallery-wrapper" class="drawing_container">
+    </div>
+    <div class="viewport hide-viewport"></div>
+    <div class="crossBtn hide-viewport">BACK</div>
+    </div>
+    <script src="drawings.js"></script>
+    <script>
+        loadPhotos("all");
+    </script>
+    <script src="art-page.js">
+    </script>
+</body>
+
+</html>
