@@ -65,7 +65,7 @@ body {
     font-family: var(--normal-text);
     color: white;
     list-style: none;
-    padding: 75px 20px 0px 20px;
+    padding: 75px 60px 0px 30px;
     box-sizing: border-box;
     transition: 200ms ease-in-out;
 }
