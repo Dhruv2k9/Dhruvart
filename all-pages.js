@@ -90,13 +90,13 @@ function ScrollHome() {
     // window.scrollTo({top:-10,behavior:"smooth"})
     heroTitle.scrollIntoView(false)
 }
-navArt.addEventListener('click', e => {
+// navArt.addEventListener('click', e => {
     
-    for (var i = 0; i < navArtD.length; i++) {
-        navArtD[i].classList.toggle('hide')
-    }
-    navArrow.classList.toggle('rotate')
-})
+//     for (var i = 0; i < navArtD.length; i++) {
+//         navArtD[i].classList.toggle('hide')
+//     }
+//     navArrow.classList.toggle('rotate')
+// })
 
 
 
